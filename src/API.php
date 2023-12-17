@@ -90,7 +90,7 @@ class API
         return $oauth;
     }
 
-    protected function reqCurl($method = 'GET', $url, $params = false, $headers = false, $postfields = false, $userpwd = false)
+    protected function reqCurl($method = 'GET', $url = null, $params = false, $headers = false, $postfields = false, $userpwd = false)
     {
         $ch = curl_init();
 
